@@ -19,7 +19,11 @@ h2,h3,h4{
     text-transform: uppercase;
 }
 /*utilities*/
-
+.container{
+    width:95%;
+    margin-right: auto;
+    margin-left: auto;
+}
 /*navigation*/
 nav.menu{
     display: flex;
@@ -83,4 +87,95 @@ p.description span{
 }
 div.border{
 
+}
+
+/*main news*/
+.main-news{
+    position: relative;/*the parent*/
+}
+.main-news-img{
+
+}
+.main-news-text{
+    position: absolute;/*the child*/
+    top:120px;
+    left:30px;
+    color:white;
+}
+.main-news-text h3{
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+.main-news-text p{
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.main-news-text h4{
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+/*secondary news*/
+.secondary-news{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.secondary-news:hover img{
+    border-bottom: 5px solid #ffcc00;
+    transform: scale(1.1);
+}
+.secondary-news-img img{
+    height: 250px;
+    min-width:100%;
+}
+.secondary-news-text{
+    background-color: white;
+    height: 110px;
+    padding:20px;
+    margin-top: -10px;
+}
+.secondary-news-text h3{
+    font-size: 12px;
+    letter-spacing: 3px;
+    color:gray;
+    margin-bottom: 20px;
+}
+.secondary-news-text h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.secondary-news-text p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.secondary-news-text h4{
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.todays-picks h2{
+    font-size: 32px;
+    text-transform: uppercase;
+    color:white;
+    letter-spacing: 3px;
+    border-left:5px solid #ffcc00;
+    padding-left:20px;
+    margin-bottom: 40px;
+}
+.pick-element{
+    display:flex;
+    align-items: center;
+}
+.pick-element-img{
+    width:100px;
+}
+.pick-element-text{
+    color:white;
+    padding:10px;
 }
